@@ -77,7 +77,7 @@ const e = (n) => {
     console.log(steps);
 }
 
-// e(3000);
+// e(300);
 
 // have to use a closure to keep track of the steps taken
 const bunnyEars = (bunnies) => {
@@ -91,3 +91,34 @@ const bunnyEars = (bunnies) => {
 }
 
 // bunnyEars(8);
+
+const searchWrapper = (array, arraySize, target) => {
+    let steps = 0;
+    const search = () => {
+        if (arraySize > 0) {
+            steps++;
+            if (array[arraySize - 1] === target) return true;
+            else return search(array, arraySize - 1, target);
+        }
+        // console.log(steps);
+        return false;
+    }
+    console.log(steps);
+    return search
+}
+
+// searchWrapper([1,2,3,4,5,6], 6, 6)
+// answer to 2a)
+
+const linearFindMax = (arr, i , j) => {
+    let max = arr[i];
+    for(let c = i + 1; c <= j; c++) {
+        if (max < arr[c]) {
+            max = arr[c];
+        }
+    }
+    return max;
+}
+
+// console.log(linearFindMax([23,523,23,52,2,5,2,547,2342346,4444,23], 3, 8))
+

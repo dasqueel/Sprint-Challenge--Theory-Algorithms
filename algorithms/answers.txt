@@ -6,4 +6,10 @@
 1f) O(n) - linear
 1g) O(n) - linear
 
-2a) 
+2a)
+
+3a) The run time would be O(n log n) - linear logarithmic, as you iterate through the list once
+and each iteration you split the array in half until you get to n one elemented arrays
+
+3b) The run time would be O(n^2) - quadratic, as you would have to iterate over each element and
+the lesser and maximum arrays are the same, which is takes n iterates as well?  
