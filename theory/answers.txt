@@ -1,0 +1,12 @@
+regex
+1) /antelopes?/
+
+2) /(m|g)oat/
+
+3) /\d{3,4}-\d{1,2}-\d{2}/
+
+console regex
+
+1) /\e\d*;\d*f/
+
+2) /\e\dm/
