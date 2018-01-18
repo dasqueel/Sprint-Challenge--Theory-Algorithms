@@ -2,7 +2,7 @@
 1b) O(log n) - logarithmic
 1c) O(log n) - logarithmic
 1d) O(n log n) - linear logarithmic 
-1e) O(n^3) - quadratic
+1e) O(n^3) - cubic
 1f) O(n) - linear
 1g) O(n) - linear
 

@@ -112,13 +112,18 @@ const searchWrapper = (array, arraySize, target) => {
 
 const linearFindMax = (arr, i , j) => {
     let max = arr[i];
+    let min = arr[i];
     for(let c = i + 1; c <= j; c++) {
         if (max < arr[c]) {
             max = arr[c];
         }
+        if (min > arr[c]) {
+            min = arr[c];
+        }
     }
-    return max;
+    // console.log(max, min);
+    return max - min;
 }
 
-// console.log(linearFindMax([23,523,23,52,2,5,2,547,2342346,4444,23], 3, 8))
+console.log(linearFindMax([2,5,2,1,7,5,3,8,9,3,5], 1, 3))
 
